@@ -22,7 +22,7 @@ public class PersonDAO {
     }
 
     public List<Person> showAll() {
-        return jdbcTemplate.query("SELECT * FROM person ORDER BY id", personMapper);
+        return jdbcTemplate.query("SELECT * FROM person ORDER BY name", personMapper);
     }
 
     public Person show(int id) {

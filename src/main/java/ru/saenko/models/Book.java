@@ -3,6 +3,7 @@ package ru.saenko.models;
 public class Book {
 
     private int id;
+    private Integer personId;
     private String name;
     private String authorName;
     private int year;
@@ -21,6 +22,10 @@ public class Book {
         return id;
     }
 
+    public Integer getPersonId() {
+        return personId;
+    }
+
     public String getName() {
         return name;
     }
@@ -35,6 +40,10 @@ public class Book {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public void setPersonId(Integer personId) {
+        this.personId = personId;
     }
 
     public void setName(String name) {

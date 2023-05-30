@@ -21,7 +21,11 @@ public class BookDAO {
     }
 
     public List<Book> showAll() {
-        return jdbcTemplate.query("SELECT * FROM book ORDER BY id", bookMapper);
+        return jdbcTemplate.query("SELECT * FROM book ORDER BY name", bookMapper);
+    }
+
+    public List<Book> showPersonBooks(int id) {
+        return jdbcTemplate.query("SELECT * FROM book WHERE person_id=?", new Object[] {id}, bookMapper);
     }
 
     public Book show(int id) {
@@ -41,5 +45,13 @@ public class BookDAO {
 
     public void delete(int id) {
         jdbcTemplate.update("DELETE FROM book where id=?", id);
+    }
+
+    public void setOwner(int id, int personId) {
+        jdbcTemplate.update("UPDATE book SET person_id=? where id=?", personId, id);
+    }
+
+    public void freeBook(int id) {
+        jdbcTemplate.update("UPDATE book SET person_id=null where id=?", id);
     }
 }
