@@ -12,14 +12,8 @@
     <list default="true" id="4cdd72d1-de3d-455a-b272-c38544cf4ef2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/saenko/controllers/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/saenko/controllers/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/saenko/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/saenko/controllers/PeopleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/saenko/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/saenko/dao/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/saenko/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/saenko/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/saenko/dao/mapper/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/saenko/dao/mapper/BookMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/saenko/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/saenko/models/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/saenko/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/saenko/models/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/books/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/books/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,27 +44,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/saenk/IdeaProjects/library-springmvc&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f9a8a741f6ee8f2831d3ab0e35b387de&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/saenk/IdeaProjects/LearnSpringMVCProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "f9a8a741f6ee8f2831d3ab0e35b387de",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\saenk\IdeaProjects\library-springmvc\src\main\webapp" />
@@ -186,7 +180,10 @@
       <workItem from="1685272327964" duration="2326000" />
       <workItem from="1685284425988" duration="5582000" />
       <workItem from="1685371494749" duration="954000" />
-      <workItem from="1685449075568" duration="5644000" />
+      <workItem from="1685449075568" duration="6130000" />
+      <workItem from="1685543779868" duration="141000" />
+      <workItem from="1685552393132" duration="1476000" />
+      <workItem from="1685555780666" duration="960000" />
     </task>
     <servers />
   </component>

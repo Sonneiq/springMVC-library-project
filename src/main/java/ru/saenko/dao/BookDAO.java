@@ -1,7 +1,9 @@
 package ru.saenko.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 import ru.saenko.dao.mapper.BookMapper;
 import ru.saenko.models.Book;
@@ -53,5 +55,10 @@ public class BookDAO {
 
     public void freeBook(int id) {
         jdbcTemplate.update("UPDATE book SET person_id=null where id=?", id);
+    }
+
+    public String getOwner(int id) {
+        return jdbcTemplate.queryForObject("SELECT person.name FROM person JOIN (SELECT * FROM book WHERE id=?) AS b" +
+                " ON person.id = b.person_id", new Object[]{id}, String.class);
     }
 }
