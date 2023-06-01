@@ -12,8 +12,14 @@
     <list default="true" id="4cdd72d1-de3d-455a-b272-c38544cf4ef2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/saenko/controllers/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/saenko/controllers/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/saenko/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/saenko/controllers/PeopleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/saenko/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/saenko/dao/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/books/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/books/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/saenko/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/saenko/models/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/saenko/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/saenko/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/books/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/books/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/books/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/books/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/people/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/people/new.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/saenk/IdeaProjects/LearnSpringMVCProject",
+    "last_opened_file_path": "C:/Users/saenk/IdeaProjects/library-springmvc",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -183,7 +189,8 @@
       <workItem from="1685449075568" duration="6130000" />
       <workItem from="1685543779868" duration="141000" />
       <workItem from="1685552393132" duration="1476000" />
-      <workItem from="1685555780666" duration="960000" />
+      <workItem from="1685555780666" duration="1120000" />
+      <workItem from="1685635005995" duration="4871000" />
     </task>
     <servers />
   </component>

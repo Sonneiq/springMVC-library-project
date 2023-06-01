@@ -1,17 +1,15 @@
 package ru.saenko.models;
 
 import javax.validation.Valid;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.Pattern;
+import javax.validation.constraints.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Person {
-    @Valid
     private int id;
-    @Pattern(regexp = "[А-Я]\\w+ [А-Я]\\w+ [А-Я]\\w+",
-        message = "Неверно указано ФИО")
+    @Pattern(regexp = "[А-Я]{1}[а-я]{1,} [А-Я]{1}[а-я]{1,} [А-Я]{1}[а-я]{1,}",
+        message = "Укажите ФИО согласно примеру: Иванов Иван Иванович")
+    @NotEmpty(message = "Данное поле не должно быть пустым")
     private String name;
     @Min(value = 1900, message = "Год должен быть не меньше 1900")
     @Max(value = 2023, message = "Год должен быть не больше 2023")

@@ -1,11 +1,19 @@
 package ru.saenko.models;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+
 public class Book {
 
     private int id;
     private Integer personId;
+    @NotEmpty(message = "Обязательно укажите название книги")
     private String name;
+    @NotEmpty(message = "Обязательно укажите автора")
     private String authorName;
+    @Min(value = 1, message = "Книга не может быть до нашей эры")
+    @Max(value = 2023, message = "Книга не может быть моложе текущего года")
     private int year;
 
     public Book() {
