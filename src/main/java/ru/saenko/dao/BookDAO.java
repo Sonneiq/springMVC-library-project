@@ -1,11 +1,12 @@
 package ru.saenko.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import ru.saenko.dao.mapper.BookMapper;
+import ru.saenko.dao.mapper.PersonMapper;
 import ru.saenko.models.Book;
+import ru.saenko.models.Person;
 
 import java.util.List;
 
@@ -15,10 +16,13 @@ public class BookDAO {
 
     private BookMapper bookMapper;
 
+    private PersonMapper personMapper;
+
     @Autowired
-    public BookDAO(JdbcTemplate jdbcTemplate, BookMapper bookMapper) {
+    public BookDAO(JdbcTemplate jdbcTemplate, BookMapper bookMapper, PersonMapper personMapper) {
         this.jdbcTemplate = jdbcTemplate;
         this.bookMapper = bookMapper;
+        this.personMapper = personMapper;
     }
 
     public List<Book> showAll() {
@@ -56,12 +60,8 @@ public class BookDAO {
         jdbcTemplate.update("UPDATE book SET person_id=null where id=?", id);
     }
 
-    public String getOwner(int id) {
-        try {
-            return jdbcTemplate.queryForObject("SELECT person.name FROM person JOIN (SELECT * FROM book WHERE id=?) AS b" +
-                    " ON person.id = b.person_id", new Object[]{id}, String.class);
-        } catch (DataAccessException dataAccessException) {
-            return null;
-        }
+    public Person getOwner(int id) {
+        return jdbcTemplate.query("SELECT * FROM person JOIN (SELECT * FROM book WHERE id=?) AS b ON person.id = b.person_id",
+                new Object[] {id}, personMapper).stream().findAny().orElse(null);
     }
 }

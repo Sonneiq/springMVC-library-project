@@ -22,7 +22,8 @@
 
 <form th:method="PATCH" th:action="@{/books/{id}/free(id=${book.getId()})}"
       th:if="${book.getPersonId()>0}">
-    <p th:text="${'Эта книга сейчас занята: ' + name}">VALUE</p>
+    <p>Эта книга сейчас занята: <a th:text="${owner.getName()}" th:href="@{~/people/{id}(id=${owner.getId()})}">VALUE</a>
+    </p>
     <input type="submit" value="Вернуть книгу">
 </form>
 
