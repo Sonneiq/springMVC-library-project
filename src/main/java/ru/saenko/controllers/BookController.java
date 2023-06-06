@@ -36,7 +36,7 @@ public class BookController {
     public String show(@PathVariable int id, Model model, @ModelAttribute("person") Person person) {
         model.addAttribute("people", personDAO.showAll());
         model.addAttribute("book", bookDAO.show(id));
-        model.addAttribute("owner", bookDAO.getOwner(id));
+        model.addAttribute("owner", personDAO.getBookOwner(id));
         return "books/show";
     }
 

@@ -9,7 +9,7 @@
 <a href="/books">Страница книг</a>
 <br/>
 <hr/>
-<h1 style="font-size: 1.5em">Пользователи:</h1>
+<h1 style="font-size: 1.5em">Читатели:</h1>
 
 <div th:each="person : ${people}">
     <a th:href="@{/people/{id}(id=${person.getId()})}"
@@ -17,7 +17,7 @@
 </div>
 <br/>
 <hr/>
-<a href="/people/new">Создать нового пользователя</a>
+<a href="/people/new">Создать нового читателя</a>
 
 </body>
 </html>
